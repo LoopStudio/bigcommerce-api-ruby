@@ -13,8 +13,9 @@ module Bigcommerce
     property :page_title
     property :meta_keywords
     property :meta_description
-    property :image_file
+    property :image_url
     property :search_keywords
+    property :custom_url
 
     def self.count(params = {})
       get 'brands/count', params
